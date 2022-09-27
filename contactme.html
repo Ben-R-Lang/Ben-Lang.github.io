@@ -21,21 +21,37 @@
     padding: 15px;
     border-radius: 10px;
 }
+body { background-color: gray; }
+label { font-weight: bold; }
 input { width: 250px; }
 textarea { width: 250px; }
+.rqd {
+    color: red;
+    font-weight: normal;
+}
 </style>
 <body>
     <h1>Contact Me</h1>
-    <form action="#" method="post">
-    <label for="myname"> Name: </label><br/>
-        <input tpye="text" name="myname" id="myname" required><br/>
-        <label for="subject">Subject: </label>
-        <input type="text" name="subject" id="subject" placeholder="CS 101" required/>
-        <textarea name="textbody" id="tbody" required>Enter message...</textarea>
-        <label for="attach">Attachments: </label><br/>
-        <input tyep="file" name="attach" id="attach"/><br/>
-
-        <input type="submit" value="Submit" />
+    <form action="#" method="post" onsubmit="alert('Not implemented yet');">
+    <br><label for="myname"> Name: <span class="rqd">*</span></label>
+        <br><input tpye="text" name="myname" id="myname" required>
+       <br> <label for="subject">Subject: <span class="rqd">*</span></label>
+       <br> <input type="text" name="subject" id="subject" placeholder="CS 101" required/>
+       <br> <textarea name="textbody" id="tbody" required placeholder="Enter message..." required></textarea>
+        <br><label for="attach">Attachments: </label>
+        <br><input type="file" name="attach" id="attach"/>
+        <label for="priority">Priority: </label><br/>
+        <select name="priority">
+            <option disabled selected value>-- Select an Option --</option>
+            <option value="low">Low</option>
+            <option value="med">Med</option>
+            <option value="high">High</option>
+            <br><option value="crit">Critical</option>
+        </select><br/><br/>
+        <input type="radio" name="flwup" id="flyup" value="yes"/>Yes
+        <input type="radio" name="flwup" id="flyup" value="no"/>No
+        <br/><br/>
+        <br><input type="submit" value="Submit" />
     </form>
 </body>
 </html>
