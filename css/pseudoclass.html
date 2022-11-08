@@ -8,7 +8,49 @@
     <!--<link rel="stylesheet" href="css/style.css">-->
     <!--<source src="js/script.js" defer>-->
 </head>
+<style>
+    a:link { /* Link that hasn't been visited */ 
+    color: green;
+    text-decoration: none;
+    padding: 10px;
+}
+ a:hover {
+    color: blue;
+    text-decoration: underline;
+    background-color: gray;
+ }
+
+  a:visited { color: black; }
+  a:active { color: red; }
+  /* Change the highlight color */
+  a::selection { background-color: pink;}
+  a::-moz-selection {background: pink;}
+
+  input {
+    padding: 6px 12px 6px 12px;
+    border: 2px solid purple;
+    color: blue;
+  }
+  input[type=text] { color: purple; }
+  input[type=text]:focus { color: blueviolet; border: 5px solid pink; }
+  input[type=submit]:hover { background-color: yellow; }
+  input[type=submit]:active { background-color: chocolate; }
+
+  img:hover { border: 3px solid red; }
+
+</style>
 <body>
-    
+    <a href="#"> Link 1</a>
+    <a href="#"> Link 2</a>
+    <a href="#"> Link 2</a>
+
+    <br/><br/>
+    <input type="text" placeholder="some text" />
+    <input type="submit" value="Submit" />
+    <br/><br/>
+
+    <img src="https://picsum.photos/200" alt="Placeholder">
+    <img src="https://picsum.photos/od/1/200" alt="Placeholder 2">
+    <img src="https://picsum.photos/id/10/200" alt="Placeholder 3">
 </body>
 </html>
