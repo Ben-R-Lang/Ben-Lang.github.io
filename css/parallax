@@ -46,6 +46,8 @@
    background-attachment: fixed;
    background-size: cover;
 }
+body, html { overflow: hidden; }
+* { margin: 0; padding: 0; }
 </style>
 <body>
     <main class=wrapper>
