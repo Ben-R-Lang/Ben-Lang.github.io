@@ -9,9 +9,11 @@
     <!--<script src="js/script.js" defer>-->
 </head>
 <body>
-    
+<button onclick="doMath();">Run Math Stuff</button>
+    <button onclick="reset();">Reset</button>
 </body>
 </html>
+
 function doMath() {
     var num1 = document.getElementById("num1").value;
     num1 = Number(num1);
