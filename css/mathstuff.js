@@ -6,14 +6,12 @@
     <meta viewport="width=device-width, initial-scale=1">
     <title>Title</title>
     <!--<link rel="stylesheet" href="css/style.css">-->
-    <!--<script src="js/script.js" defer></script>
+    <!--<script src="js/script.js" defer>-->
 </head>
 <body>
-<button onclick="doMath();">Run Math Stuff</button>
-<button onclick="reset();">Reset</button>
+    
 </body>
 </html>
-
 function doMath() {
     var num1 = document.getElementById("num1").value;
     num1 = Number(num1);
