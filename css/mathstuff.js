@@ -9,8 +9,7 @@
     <!--<script src="js/script.js" defer>-->
 </head>
 <body>
-<button onclick="doMath();">Run Math Stuff</button>
-    <button onclick="reset();">Reset</button>
+    
 </body>
 </html>
 
