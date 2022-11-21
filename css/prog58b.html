@@ -4,11 +4,32 @@
     <meta charset="utf-8">
     <meta lang="en">
     <meta viewport="width=device-width, initial-scale=1">
-    <title>Title</title>
+    <title>Porg58b</title>
     <!--<link rel="stylesheet" href="css/style.css">-->
     <!--<script src="js/script.js" defer>-->
 </head>
 <body>
-    
+    <input type="number" id="numA" name="numA">
+    <input type="number" id="numB" name="numB">
+    <input type="number" id="numC" name="numC">
+    <button onclick="calc();">Calculate</button>
+    <p id="out"></p>
+
+    <script>
+        function calc() {
+            var A = document.getElementById("numA").value;
+            A = Number(A);
+            var B = document.getElementById("numB").value;
+            B = Number(B);
+            var C = document.getElementById("numC").value;
+            C = Number(C);
+
+            var proot = (-B + Math.sqrt(B**2 - 4 * A * C)) / 2 * A;
+            var nroot = (-B - Math.sqrt(B**2 - 4 * A * C)) / 2 * A;
+
+             var out = document.getElementById("out");
+             out.innerHTML = proot + "        " + nroot;
+        }
+    </script>
 </body>
 </html>
