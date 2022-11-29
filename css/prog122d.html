@@ -11,7 +11,15 @@
 <body>
     <p id="out"></p>
     <script>
-        var
+        var msg = "x &emsp; y <br/>"
+        var lcv = -12;
+        while (lcv < 17) {
+            var x = lcv
+            var y = lcv**6 - 3 * lcv**5 - 93 * lcv**4 + 87 * lcv**3 + 1596 * lcv**2 - 1380 * lcv - 2800;
+            msg += lcv + " &emsp; " + y + "<br/>";
+            lcv++;
+        }
+        document.getElementById("out").innerHTML = msg;
     </script>
 </body>
 </html>
