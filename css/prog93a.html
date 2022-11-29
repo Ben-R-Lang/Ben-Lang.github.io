@@ -11,12 +11,16 @@
 <body>
     <p id="out"></p>
     <script>
-        var msg = "lcv &emsp; sc &emsp; ct"
+        var msg = "Total <br/>"
         var lcv = 4.75 * 933;
        while (lcv < 56) {
         var sc = lcv / 100 * 10 + lcv;
-        var ct = 
+        var ct = lcv / 100 * 3 + lcv
+        var total = lcv + sc + ct;
+        msg += lcv + sc + ct;
+        lcv++;
        }
+       document.getElementById("out").innerHTML = msg;
     </script>
 </body>
 </html>
