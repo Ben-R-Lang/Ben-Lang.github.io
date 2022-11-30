@@ -9,28 +9,16 @@
     <!--<script src="js/script.js" defer>-->
 </head>
 <body>
-    <label for="kwu">Kilowatts Used: </label>
-    <input type="number" id="kwu" name="len">
-
-    <button onclick="
-    var kwu = document.getElementById('kwu').value;
+<script>
+    var p = document.getElementById("out");
     var br = kwu * 0.0475;
     var sc = br / 100 * 10;
     var ct = br /100 * 3;
     var total = br + sc + ct;
     var lp = total / 100 * 4;
     var total2 = total + lp
-    alert('Total: ' + '$' + total.toFixed(2));
-    ">Calculate Pay</button>
-    <button onclick="
-    var kwu = document.getElementById('kwu').value;
-    var br = kwu * 0.0475;
-    var sc = br / 100 * 10;
-    var ct = br / 100 * 3;
-    var total = br + sc + ct;
-    var lp = total / 100 * 4;
-    var total2 = total + lp
-    alert('Total: ' + '$' + total2.toFixed(2));
-    ">Calculate Pay After May 20th</button>
+    var msg = "Base Rate: " + br + "<br/>" + "City Tax" + ct + "<br/>" + "Total: " + "$" + total.toFixed(2);
+    document.getElementById("out").innerHTML = msg;
+    </script>
 </body>
 </html>
