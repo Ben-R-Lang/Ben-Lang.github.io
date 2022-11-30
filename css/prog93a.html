@@ -15,8 +15,12 @@
     <button onclick="
     var kwu = document.getElementById('kwu').value;
     var br = kwu * 0.0475;
-    var sc = br / 100 * 10 + br;
-    var ct = br /100 * 3 + br;
+    var sc = br / 100 * 10;
+    var ct = br /100 * 3;
+    var total = br + sc + ct;
+    var lp = total / 100 * 4;
+    var total2 = total + 
+    alert('Total: ' + total);
     ">Calculate Pay After May 20th</button>
 
 </body>
