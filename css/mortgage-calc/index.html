@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta lang="en">
+    <meta viewport="width=device-width, initial-scale=1">
+    <title>Mortgage Balance Calculator</title>
+    <!--<link rel="stylesheet" href="css/style.css">-->
+    <!--<script src="js/script.js" defer>-->
+</head>
+<body>
+    <label for="prin">Principal: </label>
+    <input type="number" id="prin" name="prin">
+        
+    <label for="ir">Interest Rate as % (e.g. 7.9): </label>
+    <input type="number" id="ir" name="ir">
+    
+    <label for="years">Number of Years: </label>
+    <input type="number" id="years" name="years">
+    
+    <label for="mp">Monthly Payment: </label>
+    <input type="number" id="mp" name="mp">
+    
+    
+   
+    
+    <p id="out"></p>
+    <script>
+            var prin = document.getElementById("prin").value;
+            var ir = document.getElementById("ir").value;
+            var years = document.getElementById("years").value;
+            var mp = document.getElementById("mp").value;
+            
+    </script>
+    <button onclick="
+    var prin = document.getElementById('prin').value;
+            var ir = document.getElementById('ir').value;
+            var years = document.getElementById('years').value;
+            var mp = document.getElementById('mp').value;
+    var mb = prin * (1 + ir / 12) ** (12 * years) - mp [(1 + ir / 2) ** (12 * years) -1] / (ir / 12);
+    alert('Mortgage Balance: ' + '$' + mb);
+    ">Calculate</button>
+</body>
+</html>
