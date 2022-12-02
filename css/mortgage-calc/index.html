@@ -23,19 +23,19 @@
     
     <p id="out"></p>
     <script>
-            var P = document.getElementById("P").value;
-            var r = document.getElementById("r").value;
-            var t = document.getElementById("t").value;
+            var P = document.getElementById("P");
+            var r = document.getElementById("r");
+            var t = document.getElementById("t");
             
     </script>
     <button onclick="
-            var P = document.getElementById('P').value;
+            var P = document.getElementById('P');
             var n = 12;
-            var r = document.getElementById('r').value;
-            var t = document.getElementById('t').value;
-            var m = document.getElementById('m').value;
+            var r = document.getElementById('r');
+            var t = document.getElementById('t');
+            var m = document.getElementById('m');
             var B = P * (1 +  r / n) ** n * t - m * [(1 + r / n) ** n * t - 1] / (n / 12);
-    alert('Mortgage Balance: ' + '$' + B);
+            alert ('Mortgage Balance: ' + B);
     ">Calculate</button>
     <button onclick="
     
