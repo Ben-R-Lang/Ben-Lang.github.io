@@ -6,7 +6,7 @@
     <meta viewport="width=device-width, initial-scale=1">
     <title>Mortgage Balance Calculator</title>
     <!--<link rel="stylesheet" href="css/style.css">-->
-    <!--<script src="js/script.js" defer>-->
+    <script src="js/script.js" defer></script>
 </head>
 <body>
     <label for="P">Principal: </label>
@@ -22,29 +22,10 @@
     <input type="number" id="m" name="m">
     
     <p id="out"></p>
+    <button onclick="calc()">Calculate</button>
+    <button onclick="reset()">Reset</button>
     
-    <p id out></p><script>
-        var P = document.getElementById("P").value;
-        var r = document.getElementById("r").value;
-        var t = document.getElementById("t").value;
-
-</script>
-</body>
-
-    <button onclick="
-            var P = document.getElementById('P').value;
-            var n = 12;
-            var r = document.getElementById('r').value;
-            var t = document.getElementById('t').value;
-            var m = document.getElementById('m').value;
-            var B = P * (1 +  r / n) ** (n * t) - m * [(1 + r / n) ** n * t - 1] / (n / 12);
-            alert ('Mortgage Balance: ' + B);
-    ">Calculate</button>
-    <button onclick="
     
-    ">Reset</button>
-    }
-    </script>
 
 </body>
 </html>
