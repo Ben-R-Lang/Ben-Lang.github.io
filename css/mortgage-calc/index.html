@@ -9,36 +9,19 @@
     <!--<script src="js/script.js" defer>-->
 </head>
 <body>
-    <label for="prin">Principal: </label>
-    <input type="number" id="prin" name="prin">
+    <label for="P">Principal: </label>
+    <input type="number" id="P" name="P">
         
-    <label for="ir">Interest Rate as % (e.g. 7.9): </label>
-    <input type="number" id="ir" name="ir">
+    <label for="r">Interest Rate as % (e.g. 7.9): </label>
+    <input type="number" id="r" name="r">
     
-    <label for="years">Number of Years: </label>
-    <input type="number" id="years" name="years">
+    <label for="t">Number of Years: </label>
+    <input type="number" id="t" name="t">
     
-    <label for="mp">Monthly Payment: </label>
-    <input type="number" id="mp" name="mp">
+    <label for="m">Monthly Payment: </label>
+    <input type="number" id="m" name="m">
     
     <p id="out"></p>
-    <script>
-            var P = document.getElementById("P");
-            var r = document.getElementById("r");
-            var t = document.getElementById("t");
-            
-    </script>
-    <button onclick="
-            var P = document.getElementById('P');
-            var n = 12;
-            var r = document.getElementById('r');
-            var t = document.getElementById('t');
-            var m = document.getElementById('m');
-            var B = P * (1 +  r / n) ** n * t - m * [(1 + r / n) ** n * t - 1] / (n / 12);
-            alert ('Mortgage Balance: ' + B);
-    ">Calculate</button>
-    <button onclick="
     
-    ">Reset</button>
 </body>
 </html>
