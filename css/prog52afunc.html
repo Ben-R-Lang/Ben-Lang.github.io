@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta lang="en">
+    <meta viewport="width=device-width, initial-scale=1">
+    <title>Prog52a with Functions</title>
+    <!--<link rel="stylesheet" href="css/style.css">-->
+    <!--<script src="js/script.js" defer></script>-->
+</head>
+<body>
+    <label for="len">Length: </label>
+    <input typr="number" id="len" name="len" placeholer="0" required>
+
+    <label for="len">Width: </label>
+    <input typr="number" id="wid" name="wid" placeholder="0" required>
+
+    <button onclick="calc()">Calculate</button>
+    <button onclick="reset()">Clear</button>
+
+    <p id="out" style="background-color: aqua; padding: 15px;"></p>
+
+    <script>
+        function reset() {
+            document.getElementById("len").value = "";
+            document.getElementById("wid").value = "";
+            document.getElementById("out").innerHTML = "";
+        }
+       
+        function getArea(length, width) {
+            return length * width;
+            // var area = length * width;
+            // return area;
+        }
+        
+        function getPerim(length, width) {
+            var perim = 2 * length + 2 * width;
+            return perim;
+            // return 2 * length + 2 * width;
+        }
+
+        function calc() {
+            var len = Number(document.getElementById("len").value);
+            var wid = Number(document.getElementById("wid").value);
+            var area = getArea(len, wid);
+            var perim = getPerim(len, wid);
+            document.getElementById("out").innerHTML 
+            = "Area: " + area + "<br/Perimeter: " + perim;
+        }
+    </script>
+</body>
+</html>
