@@ -1,4 +1,26 @@
+h1 {
+    color: #51c4f1;
+    font-family: 'Courier New', Courier, monospace;
+}
+
 body {
+    background-color: black;
+}
+label {
     padding: 2em;
-    border: #ffffff
+    color: #00ffff;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+input {
+    background-color: black;
+    color: lime;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+button {
+    color: #51c4f1;
+    background-color: rgb(255, 192, 203);
+    font-size: 1em;
+    font-family: 'Courier New', Courier, monospace;
 }

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta lang="en">
+    <meta viewport="width=device-width, initial-scale=1">
+    <title>Prog54c with Functions</title>
+    <!--<link rel="stylesheet" href="css/style.css">-->
+    <!--<script src="js/script.js" defer></script>-->
+</head>
+<body>
+    <label for="rad">Radius: </label>
+    <input type="number" id="rad" name="rad">
+
+    <button onclick="calc()">Calculate</button>
+    <button onclick="reset()">Clear</button>
+
+    <script>
+        // Need a getArea(radius) function
+        //and a getCircumference(radius) function
+      var pi = 3.14159;
+      function reset() {
+            document.getElementById("rad").value = "";
+            document.getElementById("area").value = "";
+            document.getElementById("circum").value = "";
+            document.getElementById("out").innerHTML = "";
+            }
+
+            function getArea(radius) {
+                var area = pi * rad ** 2;
+                return area;
+            }
+
+            function getCircumference(radius) {
+                var circum = 2 * pi * rad;
+                return circum;
+            }
+
+            function calc() {
+                var radius = Number(document.getElementById("rad").value);
+                var area = getArea(radius);
+                var circum = getCircumference(radius);
+                document.getElementById("out").value = 
+                "Area: " + area + "<br/>Cirucmference: " + circum;
+            }
+    </script>
+</body>
+</html>
