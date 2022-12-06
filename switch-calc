@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta lang="en">
+    <meta viewport="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <!--<link rel="stylesheet" href="css/style.css">-->
+    <!--<script src="js/script.js" defer></script>-->
+</head>
+<body>
+    <input type="number" id="num1" name="num1">
+    <select id="operand" name="operand">
+        <option disabled select value>--select and option--</option>
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+        <option value="%">MOD</option>
+        <option value="**">^</option>
+    </select>
+    <input type="number" id="num2" name="num2">
+        <button onclick="run()">Calculate
+            <p id="output" style="background: palegreen;"></p>
+           
+           <script>
+                function run() {
+                    var num1 = Number(document.getElementById("num1").value);
+                    var num2 = Number(document.getElementById("num2").value);
+                    var op = document.getElementById("operand").value;
+                    var result = 0;
+
+                    switch (op) {
+                        case "+": 
+                        result = num1 + num2;
+                        break;
+                        case "-": 
+                        result = num1 - num2;
+                        break;
+                        case "*": 
+                        result = num1 * num2;
+                        break;
+                        case "/": 
+                        result = num1 / num2;
+                        break;
+                        case "%": 
+                        result = num1 % num2;
+                        break;
+                        case "**": 
+                        result = num1 ** num2;
+                        break;
+                        default:
+                            document.getElementById("output").innerHTML =
+                            "Invalid option selected!";
+                            return; // immediately exit the function
+                    }
+                    document.getElementById("output").innerHTML = 
+                    num1 + " " + op + " " + num2 + " = " + result;
+                }
+            </script>
+
+</body>
+</html>
