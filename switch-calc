@@ -57,6 +57,7 @@
                     document.getElementById("output").innerHTML = 
                     num1 + " " + op + " " + num2 + " = " + result;
                 }
+            
             </script>
 
 </body>
