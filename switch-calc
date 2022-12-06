@@ -8,6 +8,27 @@
     <!--<link rel="stylesheet" href="css/style.css">-->
     <!--<script src="js/script.js" defer></script>-->
 </head>
+<style>
+
+    body {
+        background-color: black;
+    }
+
+    input {
+        background-color: black;
+        color: white;
+    }
+
+    select {
+        background-color: black;
+        color: white;
+    }
+
+    button {
+        background-color: black;
+        color: white;
+    }
+</style>
 <body>
     <input type="number" id="num1" name="num1">
     <select id="operand" name="operand">
@@ -21,7 +42,7 @@
     </select>
     <input type="number" id="num2" name="num2">
         <button onclick="run()">Calculate
-            <p id="output" style="background: palegreen;"></p>
+            <p id="output" style="background: violet;"></p>
            
            <script>
                 function run() {
