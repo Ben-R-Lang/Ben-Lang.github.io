@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta lang="en">
+    <meta viewport="width=device-width, initial-scale=1">
+    <title>Prog52a with Multi-return Functions</title>
+    <!--<link rel="stylesheet" href="css/style.css">-->
+    <!--<script src="js/script.js" defer></script>-->
+</head>
+<body>
+    <script>
+        function getAreaAndPerim(length, width) {
+            var area = length * width;
+            var perim = 2 * length + 2 * width;
+            return [area, perim]
+        }
+        // Make random numbers between 1 and 10
+        var num1 = Math.random() * 10 + 1;
+        var num2 = Math.random() * 10 + 1;
+        var aAndP = getAreaAndPerim(num1, num2);
+        var area = aAndP[0];
+        var perim = aAndP[1];
+        document.writeln("Length: " + num1 + "<br/>");
+        document.writeln("Width: " + num2 + "<br/>");
+        document.writeln("Area: " + area + "<br/>");
+        document.writeln("Perimeter: " + perim + "<br/>");
+    </script>
+</body>
+</html>
