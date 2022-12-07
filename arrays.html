@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta lang="en">
+    <meta viewport="width=device-width, initial-scale=1">
+    <title>Array Notes</title>
+    <!--<link rel="stylesheet" href="css/style.css">-->
+    <!--<script src="js/script.js" defer></script>-->
+</head>
+<body>
+    <p id="out"></p>
+    <script>
+        // Make a new array (list) of cars
+        var cars = ["Saab", "Volvo", "BMW"];
+        // Add a car
+        cars[3] = "GMC";
+        cars[4] = "Subaru";
+        // Change a car
+        cars[0] = "Chevorlet";
+        // Display cars
+        document.getElementById("out").innerHTML = cars;
+
+        // Print one element at a time
+        var msg = "<ul>";
+            for (var lcv = 0; lcv < cars.length; lcv++ ) {
+                msg += "<li>" + cars[lcv] + "</li>";
+            }
+            msg += "</ul>";
+            document.write(msg);
+    </script>
+</body>
+</html>
