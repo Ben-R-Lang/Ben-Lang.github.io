@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta lang="en">
+    <meta viewport="width=device-width, initial-scale=1">
+    <title>Prog209a</title>
+    <!--<link rel="stylesheet" href="css/style.css">-->
+    <!--<script src="js/script.js" defer></script>-->
+</head>
+<body>
+    <style>
+        * {
+            background-color: black;
+            color: white
+        }
+    </style>
+    <script>
+        var nums = [];
+        for (var lcv = 0; lcv < 400; lcv++) {
+            // Randomly generates an integer between [1, 1000]
+            var n = Math.round(Math.random() * 1000 + 1);
+            nums.push(n);
+        }
+        var lt = 0;
+        var gte = 0;
+        for (var lcv = 0; lcv < nums.length; lcv++) {
+            var c = nums[lcv];
+            if (c >= 500) {
+                gte++;
+            } else {
+                lt++;
+            }
+        }
+
+        document.write("# of numbers >= 500: " + gte + "<br/>");
+        document.write("# of numbers < 500: " + lt + "<br/>");
+        document.write("# of numbers: " + nums.length);
+        document.write(nums);
+    </script>
+</body>
+</body>
+</html>
