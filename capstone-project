@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta lang="en">
+    <meta viewport="width=device-width, initial-scale=1">
+    <title>Capstone Project</title>
+    <!--<link rel="stylesheet" href="css/style.css">-->
+    <!--<script src="js/script.js" defer></script>-->
+</head>
+<body>
+    <h1>Web Design - Capstone Report &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; Name: Ben Lang
+
+        <h2>Section 1 - Critique</h2>
+        <h4>Website 1 (link) </h4>
+        <ol>
+            <li><b>What do you like about the website design?</b><br/>(answer)</li>
+            <li><b>What do you dislike about the website design?</b><br/>(answer)</li>
+            <li><b>What is the color scheme/asthetic of the website using color theory 
+            terminology? (e.g., cool colors, exciting/moody colors, pastel, etc.)</b>
+            <br/>(answer)</li>
+            <li><b>Does the website have any interactive/JavaScript components?</b><br/>(answer)</li>
+            <li><b>What features might you take from this website for your own project?</b><br/>(answer)</li>
+        </ol>
+        <h4>Website 2 (link) </h4>
+        <ol>
+            <li><b>What do you like about the website design?</b><br/>(answer)</li>
+            <li><b>What do you dislike about the website design?</b><br/>(answer)</li>
+            <li><b>What is the color scheme/asthetic of the website using color theory 
+            terminology? (e.g., cool colors, exciting/moody colors, pastel, etc.)</b>
+            <br/>(answer)</li>
+            <li><b>Does the website have any interactive/JavaScript components?</b><br/>(answer)</li>
+            <li><b>What features might you take from this website for your own project?</b><br/>(answer)</li>
+        </ol>
+        <h4>Website 3 (link) </h4>
+        <ol>
+            <li><b>What do you like about the website design?</b><br/>(answer)</li>
+            <li><b>What do you dislike about the website design?</b><br/>(answer)</li>
+            <li><b>What is the color scheme/asthetic of the website using color theory 
+            terminology? (e.g., cool colors, exciting/moody colors, pastel, etc.)</b>
+            <br/>(answer)</li>
+            <li><b>Does the website have any interactive/JavaScript components?</b><br/>(answer)</li>
+            <li><b>What features might you take from this website for your own project?</b><br/>(answer)</li>
+        </ol><br/>
+        <h2>Section 2 - Project Report</h2>
+        <ol>
+            <li><b>Paste the hyperlink to your wire frame</b><br/>(answer)</li>
+            <li><b>List the websites that inspired your website design (bullet-point l>ist, 
+                minimum of 3 not including the ones in your critique)</b><br/><ul><li>(answer)</li></ul><li>
+            <li><b>What is the basis of your website's color scheme/aesthetic 
+                (using color theory terminology)?</b><br/>(answer)</li>
+            <li><b>What dynamic/interactive component(s) did you choose to include? 
+                Discuss how you implemented it and why you included it.</b><br/>(answer)</li>
+            <li><b>What are you most proud of with the website?</b><br/>(answer)</li>
+            <li><b>What do you think can be improved in the future?</b><br/>(answer)</li>
+            <li><b>What did you learn from this project?</b><br/>(answer)</li>
+        </ol>
+</body>
+</html>
