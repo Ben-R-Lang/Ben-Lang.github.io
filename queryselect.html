@@ -1,12 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta lang="en">
-    <meta viewport="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Query Selector Practice</title>
-    <!--<link rel="stylesheet" href="css/style.css">-->
-    <!--<script src="js/script.js" defer></script>-->
 </head>
 <body>
     <ul>
@@ -30,13 +28,13 @@
         var p = document.querySelector("#wow");
         p.textContent = "Paragraph";
 
-        var hOneAll = document.querySelector(".test");
+        var hOneAll = document.querySelectorAll(".test");
         for (var lcv = 0; lcv < hOneAll.length; lcv++) {
             hOneAll[lcv].style.backgroundColor = "green";
         }
 
         var hOneAllCl = document.getElementsByClassName("test");
-        for (var lcv = 0; lcv < hOneAllCl.lenth; lcv++) {
+        for (var lcv = 0; lcv < hOneAllCl.length; lcv++) {
             hOneAllCl[lcv].style.color = "white";
         }
 
