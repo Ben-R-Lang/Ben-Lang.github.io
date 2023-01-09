@@ -29,6 +29,10 @@
             xhttp.open("GET", "ajax.txt", true);
             xhttp.send();
         }
+        function pageLoad() {
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET", "https://raw.githubusercontent.com/typicode/demo/master/db.json")
+        }
     </script>
 </body>
 </html>
