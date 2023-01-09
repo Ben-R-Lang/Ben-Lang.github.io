@@ -32,6 +32,8 @@
         function pageLoad() {
             var xhr = new XMLHttpRequest();
             xhr.open("GET", "https://raw.githubusercontent.com/typicode/demo/master/db.json")
+            xhr.responseType = "json";
+            xhr.send();
         }
     </script>
 </body>
