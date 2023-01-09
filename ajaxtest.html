@@ -34,7 +34,37 @@
             xhr.open("GET", "https://raw.githubusercontent.com/typicode/demo/master/db.json")
             xhr.responseType = "json";
             xhr.send();
-        }
+            xhr.onLoad = function() {
+                if (xhr.status != 200) {
+                    alert(`Error ${xhr.status}: ${xhr.statusText}`);
+                } else {
+                    var response = xhr.response;
+                    var posts = response.posts;
+                    var comments = response.comments;
+                    var profile = response.profile
+
+                    var html = "";
+                    for (var i = 0; i < post.length; i++) {
+                        var post = posts[i];
+                        html += `<h2>${post.title}</h2>`;
+                        html += `<p>${post.id}</p>`;
+                    }
+                    document.getElementById("posts").innerHTML = html;
+
+                    html = "";
+                    for (var i = 0; i < comments.length; i++) {
+                        var comment = comments[i];
+                        html += `<h3>Comment #${comment.id}-${comment.postId}</h3>`;
+                        html += `<p>${comment.body}</p>`;
+                }
+                document.getElementById("comments").innerHTML = html;
+
+                html = "";
+                html += `<h1>${profile.name}</h1>`;
+                document.getElementById("profile").innerHTML = html;
+                }
+             };
+        };
     </script>
 </body>
 </html>
