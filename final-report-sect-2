@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta lang="en">
+    <meta viewport="width=device-width, initial-scale=1">
+    <title>Final Report Section 2</title>
+    <!--<link rel="stylesheet" href="css/style.css">-->
+    <!--<script src="js/script.js" defer></script>-->
+</head>
+<body>
+    <h1>Section 2 - Project Report</h1>
+    <ol>
+        <li><b>Paste the hyperlink to your wireframe<br/></b>[Type Here]</li><br/><br/>
+        <li><b>List the websites that inspired your website design (bullet-point
+             list, minimum of 3 not including the ones in your critique)</b>
+             <ul>
+                <li>[Type Here]</li>
+                <li>[Type Here]</li>
+                <li>[Type Here]</li>
+             </ul>
+            </li><br/><br/>
+        <li><b>What is the basis of your website's color scheme/aesthetic (using color theory terminology)?</b><br/>[Type Here]</li><br/><br/>
+        <li><b>What dynamic/interactive component(s) did you choose to include? 
+            Discuss how you implemented it and why you included it.</b><br/>[Type Here]</li><br/><br/>
+        <li><b>What are you most proud of with the website?</b></li><br/>[Type Here]<br/><br/>
+        <li><b>What do you think can be improved in the future?</b><br/>[Type Here]</li><br/><br/>
+        <li><b>What did you learn from this project?</b></li><br/>[Type Here]<br/><br/>
+    </ol>
+</body>
+</html>
