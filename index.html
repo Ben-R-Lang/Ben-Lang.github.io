@@ -1,48 +1,49 @@
-
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
     <meta lang="en">
     <meta viewport="width=device-width, initial-scale=1">
-    <title>Index</title>
+    <title>Home</title>
     <!--<link rel="stylesheet" href="css/style.css">-->
-    <!--<source src="js/script.js" defer>-->
+    <!--<script src="js/script.js" defer></script>-->
 </head>
 <style>
-    body {font-family: Arial;}
-h1, h2, h3 {font-family: Helvetica;}
-    a{color: green;font-weight: bold;}
-    #maindiv {background-color: gainsboro;}
+    * {
+    background-color: black;
+    color: white;
+}
+p {
+    font-size: 4.5mm;
+}
 </style>
 <body>
-    <div id="maindiv">
-    <h1>This is my first webpage!</h1>>
-    <p>Hello, World!</p>
-    <h2>This is a subheading!</h2>
-    <p>This is extra text!</p>
-</div>
-<div>
-    <h1>Class Files</h1>
-    <ul>
-        <li><a href="bikeshop.html">Bikeshop</a></li>
-        <li><a href="eggrecipe.html">eggrecipe</a></li>
-        <li><a href="gardenplate.html"></a>gardenplate</a></li>
-            <p>cityfarmer</p>
-            <ul>
-                <li>
-                    <a href="cityfarmer.html">cityfarmer</a>
-                </li>
-                <li>
-                    <a href="cityfarmer02.html">cityfarmer02</a>
-                </li>
-            </ul>
-        </li>
-    </ul>
-    <a href="https://github.com/Ben-R-Lang/Ben-Lang.github.io/blob/master/index.html">GitHub Homepage</a>
-    <a href="lang.b1@stu.janesville.k12.wi.us">Ben Lang</a>
-</div>
-    <video src="puppy.mp4">Could not load video</video>
-    <audio> src="test-audio.ogg">Could not load audio</audio>
+    <h1>More About Me</h1>
+    <p>&emsp;&emsp;&emsp;My main interests are music, physics, math, and computer science. Some of my hobbies reflect my interest in music such as playing guitar and violin. I also play video games a lot and would like to program and design games.</p><br/>
+    <h1>My Work</h1>
+    <p>&emsp;&emsp;&emsp;The work I currently do is designing websites, web pages, and games for people and companies. I have a contact form below if you need something designed.</p>
+    <h1>Contact Form</h1>
+    <form action="#" method="post" style="text-align: center;" onsubmit="alert('Not implemented yet');">
+    <br><label for="myname"> Name: <span class="rqd">*</span></label>
+        <br><input tpye="text" name="myname" id="myname" required>
+       <br> <label for="subject">Subject: <span class="rqd">*</span></label>
+       <br> <input type="text" name="subject" id="subject" placeholder="" required/>
+       <br> <textarea name="textbody" id="tbody" required placeholder="Enter message..." required></textarea>
+       <br><span class="rqd">*</span>
+        <br><label for="attach">Attachments: </label>
+        <br><input type="file" name="attach" id="attach"/>
+        <label for="priority">Priority: </label><br/>
+        <select name="priority">
+            <option disabled selected value>-- Select an Option --</option>
+            <option value="low">Low</option>
+            <option value="med">Medium</option>
+            <option value="high">High</option>
+            <br><option value="crit">Critical</option>
+        </select><br/><br/>
+        <input type="radio" name="flwup" id="flyup" value="yes"/>Yes
+        <input type="radio" name="flwup" id="flyup" value="no"/>No
+        <br/><br/>
+        <br><input type="submit" value="Submit"/>
+    </form>
 </body>
 </html>
